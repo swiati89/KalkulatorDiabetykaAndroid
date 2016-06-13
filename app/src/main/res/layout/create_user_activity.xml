@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="top"
+    android:background="#a3f6f0">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_user_data_text"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/set_login_textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name_text"
+        android:id="@+id/set_user_name_textView"
+        android:layout_below="@+id/set_login_textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_user_name_editText"
+        android:layout_below="@+id/set_user_name_textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_insulinressistance_textview"
+        android:id="@+id/set_insulin_resistance_textView"
+        android:layout_below="@+id/set_user_name_editText"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_insulinresisstance_editText"
+        android:layout_below="@+id/set_insulin_resistance_textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_text"
+        android:id="@+id/set_password_textView"
+        android:layout_below="@+id/set_insulinresisstance_editText"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/set_password_editText"
+        android:layout_below="@+id/set_password_textView"
+        android:layout_alignLeft="@+id/set_user_name_editText"
+        android:layout_alignStart="@+id/set_user_name_editText"
+        android:textSize="20sp"/>
+
+
+
+
+
+
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_password_editText"
+        android:padding="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_userInDB_btn"
+            android:text="@string/btn_create_user_text"
+            />
+    </LinearLayout>
+</RelativeLayout>

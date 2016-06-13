@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kalkulator Diabetyka</string>
+    <string name="login_activity_message_text">Zaloguj sie, lub stwórz nowego uzytkownika</string>
+    <string name="user_name_text">Nazwa Użytkownika</string>
+    <string name="btn_logIn_text">Zaloguj</string>
+    <string name="btn_create_user_text">Stwórz użytkownika</string>
+    <string name="set_user_data_text">Wprowadź dane Użytkownika</string>
+    <string name="password_text">Hasło</string>
+    <string name="set_insulinressistance_textview">Insuliooporność</string>
+</resources>
