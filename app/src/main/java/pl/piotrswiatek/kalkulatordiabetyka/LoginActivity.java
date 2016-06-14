@@ -53,23 +53,21 @@ public class LoginActivity extends Activity {
         Intent getCreateUserScreen = new Intent(this,CreateUserActivity.class);
         //final int result = 1;
 
-        try {
+
             if (database==null) {
                 //TODO ad code for login
-                usersDb = this.openOrCreateDatabase("UsersData", MODE_PRIVATE, null);
-                database = getApplicationContext().getDatabasePath("UsersData");
-                usersDb.execSQL("CREATE TABLE IF NOT EXISTS users" +
-                        "(id integer primary key, name VARCHAR, password VARCHAR, INTEGER insulinRessistance);");
-                btnLogin.setClickable(true);
+                //usersDb = this.openOrCreateDatabase("UsersData", MODE_PRIVATE, null);
+               // database = getApplicationContext().getDatabasePath("UsersData");
+                //usersDb.execSQL("CREATE TABLE IF NOT EXISTS users" +
+                        //"(id integer primary key, name VARCHAR, password VARCHAR, INTEGER insulinRessistance);");
+               // btnLogin.setClickable(true);
                 startActivity(getCreateUserScreen);
 
             } else if(database.exists()){
-                Toast.makeText(this, "otwieramy baze danych", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "otwieramy baze danych", Toast.LENGTH_SHORT).show();
                 startActivity(getCreateUserScreen);
             }
 
-        }catch (Exception e){
-            Log.e("CONTACTS ERROR", "Error Creating Database");
-        }
+
     }
 }
